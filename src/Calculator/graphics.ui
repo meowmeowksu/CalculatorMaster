@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graphics</class>
+ <widget class="QDialog" name="Graphics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>График</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(45, 42, 55)</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>321</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_count">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>320</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border:  3x;
+    border-radius:  15px; 
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.943, x2:0.584, y2:0, stop:0 rgba(50, 34, 93, 255), stop:1 rgba(102, 40, 162, 255));
+    color: rgb(255,  255,  255);
+    padding:  5px;
+    font: bold  15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); </string>
+   </property>
+   <property name="text">
+    <string>Построить график</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_count_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>320</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border:  3x;
+    border-radius:  15px; 
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.943, x2:0.584, y2:0, stop:0 rgba(50, 34, 93, 255), stop:1 rgba(102, 40, 162, 255));
+    color: rgb(255,  255,  255);
+    padding:  5px;
+    font: bold  15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); </string>
+   </property>
+   <property name="text">
+    <string>Очистить график</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>40</y>
+     <width>86</width>
+     <height>236</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+Color : rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Xmax</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_xmax">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(34, 32, 42);
+}
+
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+Color : rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Xmin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_xmin">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(34, 32, 42);
+}
+
+
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+Color : rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Ymax</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_ymax">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(34, 32, 42);
+}
+
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+Color : rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Ymin</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_ymin">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(34, 32, 42);
+}
+
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

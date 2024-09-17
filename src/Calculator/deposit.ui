@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Deposit</class>
+ <widget class="QDialog" name="Deposit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Депозитный калькулятор</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(45, 42, 55)</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>22</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сумма депозита</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_amount">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>22</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>69</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Срок размещения (в месяцах)</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_month">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>129</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Процентная ставка</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_rate">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>128</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>232</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Периодичность</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>180</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Капитализация</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_replenishments">
+   <property name="geometry">
+    <rect>
+     <x>153</x>
+     <y>288</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>288</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Пополнения</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>328</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Снятия</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_withdrawals">
+   <property name="geometry">
+    <rect>
+     <x>153</x>
+     <y>328</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>370</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Налоговая ставка</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_taxrate">
+   <property name="geometry">
+    <rect>
+     <x>153</x>
+     <y>370</y>
+     <width>271</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>411</y>
+     <width>621</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Line {
+color: white;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_accruedinterest">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>450</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_count">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>602</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border:  3x;
+    border-radius:  15px; 
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.943, x2:0.584, y2:0, stop:0 rgba(50, 34, 93, 255), stop:1 rgba(102, 40, 162, 255));
+    color: rgb(255,  255,  255);
+    padding:  5px;
+    font: bold  15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); </string>
+   </property>
+   <property name="text">
+    <string>Рассчитать</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_clear">
+   <property name="geometry">
+    <rect>
+     <x>246</x>
+     <y>601</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border:  3x;
+    border-radius:  15px; 
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.943, x2:0.584, y2:0, stop:0 rgba(50, 34, 93, 255), stop:1 rgba(102, 40, 162, 255));
+    color: rgb(255,  255,  255);
+    padding:  5px;
+    font: bold  15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); </string>
+   </property>
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>438</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Начисленные проценты</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>556</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сумма на вкладе к концу срока</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>498</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сумма налога</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_taxamount">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>504</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_depositend">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>560</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    color: rgb(255, 255, 255); 
+qproperty-alignment: 'AlignVCenter | AlignRight';
+background-color:rgb(80, 75, 98);
+}
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>646</y>
+     <width>371</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QRadioButton" name="radioButton_calc">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Калькулятор</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_creditcalc">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Кредитный калькулятор</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_depositcalc">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Депозитный калькулятор</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>192</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QRadioButton" name="radioButton_yes">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Да</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_no">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>244</y>
+     <width>209</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QRadioButton" name="radioButton_oncemonth">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Раз в месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_onceyear">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white; /* цвет рамки */
+    background-color: #333333; /* цвет фона индикатора */
+    border-radius: 5px; /* скругление углов */
+}
+
+QRadioButton::indicator::checked {
+    background-color: white; /* цвет индикатора при выборе */
+}</string>
+      </property>
+      <property name="text">
+       <string>Раз в год</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
